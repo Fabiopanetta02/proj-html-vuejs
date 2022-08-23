@@ -2,37 +2,46 @@
     <header>
         <!-- top bar -->
         <div class="top-bar">
-            <div class="container">
-                <ul class="inline-list">
-                    <li v-for="contact, index in contactsLinks"
-                        :key="index">
+            <ul class="container inline-list">
+                <li v-for="contact, index in contactsLinks"
+                    :key="index">
+                    <a :href="contact.url">
                         <font-awesome-icon :icon="contact.icon" />
-                        <a :href="contact.url">{{ contact.text }}</a>
-                    </li>
-                </ul>
-            </div>
+                        {{ contact.text }}
+                    </a>
+                </li>
+            </ul>
         </div>
         <!-- /top bar -->
 
         <!-- menu -->
         <nav>
-            <div>
-
+            <div class="bg-dark">
+                <div class="container">
+                    <a href="#">
+                        <img src="../assets/img/logo.svg" alt="">
+                    </a>
+                    <ul class="inline-list">
+                        <li v-for="link, index in headerLinks"
+                            :key="index">
+                            <a :href="link.url">{{ link.text.toUpperCase() }}</a>
+                        </li>
+                        <li>
+                            <a class="btn btn-solid" href="#">Get in touch</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="jumbotron">
+                    <h1>Lead ~ Customer</h1>
+                    <p>Successful startegies require data analysis, creativity and customer focus, taking advantage of the latest technologies to offer excellent services</p>
+                    <div>
+                        <a href="#" class="btn btn-solid">Get in touch</a>
+                        <a href="#" class="btn btn-outline">Read more</a>
+                    </div>
+                </div>
             </div>
-            <ul>
-
-            </ul>
         </nav>
         <!-- /menu -->
-
-        <div class="hero">
-            <h5>Fusions & acquisitions</h5>
-            <h1>Insurance consulting</h1>
-            <form action="">
-
-            </form>
-        </div>
-
     </header>
 </template>
 
@@ -54,10 +63,19 @@ export default {
     @import '../assets/style/variables.scss';
     @import '../assets/style/mixins.scss';
     header {
+        *:not(.btn) {
+                color: $text-col;
+                
+            }
+        a{
+            text-decoration: none
+        }
         .top-bar {
             @include flex-center ('cross');
             height: 50px;
             background-color: $text-dark-col;
+            font-weight: 300;
+
             ul {
                 display: flex;
                 justify-content: space-between;
@@ -74,15 +92,62 @@ export default {
                         color: $text-light-col;
                     }
                     i {
-                        margin-right: 10px;
+                        margin-right: 5px;
                     }
                     a {
                         text-decoration: none;                        
                     }
                 }
             }
+        }  
+        nav {
+            background-image: url('../assets/img/hero-image.png');
+            background-repeat: no-repeat;
+            height: 900px;
+            background-size: cover;
+            background-position: center bottom;
+            div.bg-dark{
+                background-color: rgba($color: #000000, $alpha: 0.7);
+                height: 900px;
+
+                div.container{
+                display: flex;
+                justify-content: space-between;
+                padding-top: 20px;
+                }
+
+                a {
+                font-size: 18px;
+                    img{
+                        width: 50%;
+                    }
+                }
+                ul {
+                    li {
+                        margin-left: 40px;
+                    }
+                }
+                .jumbotron{
+                    height: 820px;
+                    text-align: center;
+
+                    h1{
+                        font-size: 60px;
+                        margin-top: 200px;
+                    }
+                    p{
+                        width: 730px;
+                        margin: 20px auto;
+                    }
+                    div{
+                        display: flex;
+                        justify-content: center;
+                        a{
+                            margin: 0 10px;
+                        }
+                    }
+                }
+            }
         }
-        
-    }
-    
+    } 
 </style>
