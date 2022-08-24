@@ -1,17 +1,16 @@
 <template>
     <div class="option">
-        <div>
+        <div class="rounded">
             <font-awesome-icon :icon="option.icon" class="icon"/>         
         </div>        
         <h3>{{ option.text }}</h3>
         <p>{{ option.description }}</p>
-        <button type="button" class="btn btn-outline">READ MORE</button>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'OptionCard',
+    name: 'OptionCardJumbotron',
     props: {
         option: Object
     }
@@ -20,16 +19,14 @@ export default {
 
 <style lang="scss" scoped>
     @import '../assets/style/variables.scss';
-    .option {
+    div.option {
         width: calc((100% - 60px) / 3);
         margin-bottom: 30px;
         padding: 50px;
         border-radius: 10px;
-        background-color: #24333d;
-        color: #fff;
-        div {
-            display: flex;
-            justify-content: space-between;
+        background-color: #fff;
+        color: #000;
+        div.rounded {
             margin-bottom: 20px;
             .icon{
                 font-size: 48px;

@@ -64,6 +64,7 @@ export default {
     section {
         background-color: $text-col;
         color: #000;
+        position: relative;
         .container {
             @include flex-center ('both');
             justify-content: space-between;
@@ -83,21 +84,14 @@ export default {
             .right {
                 & > div {
                     width: calc((100% - 30px) / 2);
-                    
-                    &:nth-child(-n+2) {
-                        margin-bottom: 60px;
-                    }
-                    i {
-                        font-size: 26px;
-                        color: $brand-col;
-                        margin-right: 10px;
-                    }
-    
-                    h3 {
-                        display: inline-block;
-                        margin-bottom: 15px;
-                    }
                 }
+                img{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    height: 100%
+
+                };
             }
         }
     }

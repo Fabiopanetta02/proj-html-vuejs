@@ -1,7 +1,9 @@
 <template>
     <main>
+        <HumanCorePerformance />
         <TheCompany />
         <TheServices />
+        <MonthlyPlans />
         <TheNews />
         <TheNewsletter />
 
@@ -13,6 +15,8 @@ import TheCompany from './TheCompany.vue';
 import TheServices from './TheServices.vue';
 import TheNews from './TheNews.vue';
 import TheNewsletter from './TheNewsletter.vue';
+import HumanCorePerformance from './HumanCorePerformance.vue';
+import MonthlyPlans from './MonthlyPlans.vue';
 
 export default {
     name: 'BaseMain',
@@ -20,7 +24,9 @@ export default {
     TheCompany,
     TheServices,
     TheNews,
-    TheNewsletter
+    TheNewsletter,
+    HumanCorePerformance,
+    MonthlyPlans
 }
 }
 </script>

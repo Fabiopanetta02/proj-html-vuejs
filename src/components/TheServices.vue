@@ -1,5 +1,5 @@
 <template>
-    <section class="dark-text">
+    <section>
         <div class="container">
             <SectionTitle :sectionTitle="Title"/>
 

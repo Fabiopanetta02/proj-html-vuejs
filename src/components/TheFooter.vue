@@ -40,7 +40,8 @@
                 <div>
                     <LinksCard 
                         :title="'Support'"
-                        :links="supportLinks"/>
+                        :links="supportLinks"
+                    />
                 </div>
                 <!-- /links -->
             </div>
@@ -79,7 +80,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
- @import '../assets/style/variables.scss';
+    @import '../assets/style/variables.scss';
     @import '../assets/style/mixins.scss';
     footer {
         
@@ -129,6 +130,9 @@ export default {
                         color: $text-col;
                         margin-top: 20px;
                         border: 1px solid #038483
+                    }
+                    ul{
+                        padding-left: 0
                     }
                 }
             }

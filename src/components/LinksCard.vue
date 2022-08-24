@@ -1,11 +1,11 @@
 <template>
     <div class="card">
         <h3>{{ title }}</h3>
-        <ul>
+        <ul class="px-0">
             <li v-for="link, index in links"
                 :key="index">                
                 <a :href="link.url">
-                    <i class="fas fa-chevron-right"></i>
+                    <font-awesome-icon icon="fas fa-chevron-right" class="icon"/>
                     {{ link.text }}
                 </a>
             </li>

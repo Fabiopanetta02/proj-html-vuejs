@@ -32,7 +32,7 @@
                     </ul>
                 </div>
                 <div class="jumbotron">
-                    <h1 >Lead ~ Customer</h1>
+                    <h2 >Lead ~ <span>Customer</span></h2>
                     <p>Successful startegies require data analysis, creativity and customer focus, taking advantage of the latest technologies to offer excellent services</p>
                     <div>
                         <a href="#" class="btn btn-inline">Get in touch</a>
@@ -133,7 +133,7 @@ export default {
                     height: 820px;
                     text-align: center;
 
-                    h1{
+                    h2{
                         font-size: 60px;
                         margin-top: 200px;
                     }
