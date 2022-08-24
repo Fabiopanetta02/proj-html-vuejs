@@ -1,7 +1,6 @@
 <template>
     <section>
         <div class="container">
-
             <div class="left">
                 <div>
                     <h5 class="fs-6 mb-3">About the network</h5>
@@ -40,8 +39,22 @@
 </template>
 
 <script>
+
 export default {
-    name: 'TheCompany'
+    name: 'TheCompany',
+    components: {
+    },
+    data() {
+        return {
+            Title: {
+                class: 'section-light-title',
+                subtitle: 'About the network',
+                titleHTML: '<span>The</span> Company',
+                firstText: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit exercitationem sint quisquam accusamus unde, earum numquam dolores modi, inventore debitis.',
+                
+            }
+        }
+    }
 }
 </script>
 

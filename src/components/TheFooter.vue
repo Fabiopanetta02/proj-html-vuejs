@@ -128,6 +128,7 @@ export default {
                     .btn {
                         color: $text-col;
                         margin-top: 20px;
+                        border: 1px solid #038483
                     }
                 }
             }

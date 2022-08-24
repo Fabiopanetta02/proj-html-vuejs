@@ -1,7 +1,10 @@
 //colors
 $brand-dark-col: #058283;
 $brand-dark50-col: rgba($brand-dark-col, 0.50);
+$brand-dark15-col: rgba($brand-dark-col, 0.15);
+
 $brand-col: #00a6a6;
+$brand-light-col: #d9f2f2;
 $brand15-col: rgba($brand-col, 0.15);
 
 $text-col: #fff;
@@ -15,7 +18,12 @@ $bg-light-col: #eef4ed;
 $gray-nurse: #e3e7df;
 
 $black10: rgba(#000, 0.1);
+$black25: rgba(#000, 0.25);
+$black40: rgba(#000, 0.40);
+$black60: rgba(#000, 0.6);
+$black70: rgba(#000, 0.7);
 $white3: rgba(#fff, 0.03);
+$white50: rgba(#fff, 0.5);
 $white60: rgba(#fff, 0.6);
 $white70: rgba(#fff, 0.7);
 $white80: rgba(#fff, 0.8);

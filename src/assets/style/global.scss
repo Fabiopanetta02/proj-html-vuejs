@@ -38,11 +38,26 @@ footer{
     margin: 0 auto;
 }
 
-section.light {
-    color: $text-dark-col;
-}
-section.dark {
-    color: $text-col;
+section {
+    padding: 130px 0;
+
+    &.dark-text,
+    .section-dark-title {
+        color: $text-dark-col;
+        h2 {
+            span {
+                color: #038483;
+            }
+        }
+    }
+    &.light-text,
+    .section-light-title {
+        color: $text-col;
+        button.btn-outline{
+            border: 1px solid #038483;
+            color: #fff;
+        }
+    }
 }
 
 h1 {

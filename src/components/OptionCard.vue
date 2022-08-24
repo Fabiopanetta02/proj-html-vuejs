@@ -11,7 +11,7 @@
 
 <script>
 export default {
-    name: 'TheOption',
+    name: 'OptionCard',
     props: {
         option: Object
     }
@@ -43,7 +43,7 @@ export default {
         h3, p {
             margin-bottom: 20px;
         }
-        button{
+        button.btn-outline{
             border: 1px solid #038483;
             color: #fff;
         }
