@@ -26,7 +26,7 @@ export default {
         return {
             Title: {
                 class: 'section-dark-title',
-                subtitle: 'Our editorial content',
+                subtitle: 'OUR EDITORIAL CONTENT',
                 titleHTML: 'Latest <span>News</span>',
                 firstText: 'Every week we publish content about what is best in the business world.',
                 button: {

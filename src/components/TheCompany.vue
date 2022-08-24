@@ -3,28 +3,28 @@
         <div class="container">
             <div class="left">
                 <div>
-                    <h5 class="fs-6 mb-3">About the network</h5>
+                    <h5 class="fs-6 mb-3 fw-boldm">ABOUT THE NETWORK</h5>
                     <h2 class="fw-bold"><span>The</span> Company</h2>
                     <p class="mt-4">For 12 years we have been providing audit and warranty, financial advice, taxes and related services to select clients</p> 
                 </div>
                 <div class="row">
                     <div class="col-6">
-                        <font-awesome-icon icon="fas fa-award"/>
+                        <font-awesome-icon icon="fas fa-award" class="icon"/>
                         <h3 class="d-inline ms-2">Tradition</h3>
                         <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                     <div class="col-6">
-                        <font-awesome-icon icon="fas fa-lock" />
+                        <font-awesome-icon icon="fas fa-lock" class="icon"/>
                         <h3 class="d-inline ms-2">Security</h3>
                         <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                     <div class="col-6">
-                        <font-awesome-icon icon="fas fa-edit" />
+                        <font-awesome-icon icon="fas fa-edit" class="icon"/>
                         <h3 class="d-inline ms-2">Certificate</h3>
                         <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                     <div class="col-6">
-                        <font-awesome-icon icon="fas fa-graduation-cap" />
+                        <font-awesome-icon icon="fas fa-graduation-cap" class="icon"/>
                         <h3 class="d-inline ms-2">Expertise</h3>
                         <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
@@ -79,6 +79,10 @@ export default {
             .left {
                 & > * {
                     margin-bottom: 20px;
+                }
+                .icon{
+                    color: #058283;
+                    font-size: 1.75rem;
                 }
             }
             .right {

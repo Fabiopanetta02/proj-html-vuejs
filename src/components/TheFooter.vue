@@ -5,10 +5,7 @@
 
                 <!-- contacts -->
                 <div class="contacts">
-                    <a class="logo" href="#">
-                        <span>Nex</span>
-                        <span>Gen</span>
-                    </a>
+                    <img src="../assets/img/logo.svg" class="w-50">
                     <p>A Functional HTML Template for Corporate & Business.</p>
                     <span>
                         <font-awesome-icon icon="fas fa-phone" />

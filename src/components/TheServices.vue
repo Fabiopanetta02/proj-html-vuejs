@@ -30,7 +30,7 @@ export default {
         return {
             Title: {
                 class: 'section-light-title',
-                subtitle: 'Our business areas',
+                subtitle: 'OUR BUSINESS AREAS',
                 titleHTML: 'Excellence in <span>Services</span>',
                 firstText: 'We are leaders in providing consultancy services with a set of cutting-edge technologies and a team of experienced and renowned professionals. These are some options that you can hire.',
                 button: {

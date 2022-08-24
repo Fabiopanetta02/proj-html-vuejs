@@ -18,9 +18,9 @@ import humanjumbotron from '@/data/links/humanjumbotron';
 import OptionCardJumbotron from './OptionCardJumbotron.vue';
 export default {
     name: 'HumanCorePerformance',
-     components: {
+    components: {
     OptionCardJumbotron
-},
+    },
     data() {
         return{
             humanjumbotron
@@ -34,8 +34,6 @@ export default {
     @import '../assets/style/mixins.scss';
     section {
         background-color: #e3e7df;  
-              
-        
         .option-cards {
             display: flex;
             flex-wrap: wrap;

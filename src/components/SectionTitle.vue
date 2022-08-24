@@ -1,7 +1,7 @@
 <template>
     <div :class="sectionTitle.class">
-        <h5>{{ sectionTitle.subtitle }}</h5>
-        <h2 v-html="sectionTitle.titleHTML"></h2>
+        <h5 class="fs-6 fw-bold">{{ sectionTitle.subtitle }}</h5>
+        <h2 class="fw-bold" v-html="sectionTitle.titleHTML"></h2>
         <div v-if="sectionTitle.button"
             class="description">
             <div>

@@ -6,7 +6,7 @@
         <MonthlyPlans />
         <TheNews />
         <TheNewsletter />
-
+        <GetInTouch />
     </main>
 </template>
 
@@ -17,7 +17,7 @@ import TheNews from './TheNews.vue';
 import TheNewsletter from './TheNewsletter.vue';
 import HumanCorePerformance from './HumanCorePerformance.vue';
 import MonthlyPlans from './MonthlyPlans.vue';
-
+import GetInTouch from './GetInTouch.vue';
 export default {
     name: 'BaseMain',
     components: {
@@ -26,7 +26,8 @@ export default {
     TheNews,
     TheNewsletter,
     HumanCorePerformance,
-    MonthlyPlans
+    MonthlyPlans,
+    GetInTouch
 }
 }
 </script>

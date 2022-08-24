@@ -22,7 +22,7 @@ export default {
         return {
             Title: {
                 class: 'section-light-title',
-                subtitle: 'Newsletter',
+                subtitle: 'NEWSLETTER',
                 titleHTML: '<span>Know</span> First',
                 firstText: 'Follow closely and receive content about our company and the news of the current market.'
             }
