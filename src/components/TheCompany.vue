@@ -1,0 +1,91 @@
+<template>
+    <section>
+        <div class="container">
+
+            <div class="left">
+                <div>
+                    <h5 class="fs-6 mb-3">About the network</h5>
+                    <h2 class="fw-bold"><span>The</span> Company</h2>
+                    <p class="mt-4">For 12 years we have been providing audit and warranty, financial advice, taxes and related services to select clients</p> 
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <font-awesome-icon icon="fas fa-award"/>
+                        <h3 class="d-inline ms-2">Tradition</h3>
+                        <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="col-6">
+                        <font-awesome-icon icon="fas fa-lock" />
+                        <h3 class="d-inline ms-2">Security</h3>
+                        <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="col-6">
+                        <font-awesome-icon icon="fas fa-edit" />
+                        <h3 class="d-inline ms-2">Certificate</h3>
+                        <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="col-6">
+                        <font-awesome-icon icon="fas fa-graduation-cap" />
+                        <h3 class="d-inline ms-2">Expertise</h3>
+                        <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <img src="../assets/img/about-3.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+    </section>
+</template>
+
+<script>
+export default {
+    name: 'TheCompany'
+}
+</script>
+
+<style lang="scss" scoped>
+    @import '../assets/style/variables.scss';
+    @import '../assets/style/mixins.scss';
+    section {
+        background-color: $text-col;
+        color: #000;
+        .container {
+            @include flex-center ('both');
+            justify-content: space-between;
+            height: 100%;
+            .right,
+            .left {
+                width: calc((100% - 60px) / 2);
+                h2 span{
+                    color: $brand-dark-col;
+                }
+            }
+            .left {
+                & > * {
+                    margin-bottom: 20px;
+                }
+            }
+            .right {
+                & > div {
+                    width: calc((100% - 30px) / 2);
+                    
+                    &:nth-child(-n+2) {
+                        margin-bottom: 60px;
+                    }
+                    i {
+                        font-size: 26px;
+                        color: $brand-col;
+                        margin-right: 10px;
+                    }
+    
+                    h3 {
+                        display: inline-block;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+</style>

@@ -58,9 +58,9 @@
 
 <script>
 //links
-import aboutLinks from '../data/footer-about-links.js'
-import servicesLinks from '../data/footer-services-links.js'
-import supportLinks from '../data/footer-support-links.js'
+import aboutLinks from '../data/links/about.js'
+import servicesLinks from '../data/links/services.js'
+import supportLinks from '../data/links/support.js'
 //components
 import LinksCard from './LinksCard.vue'
 export default {

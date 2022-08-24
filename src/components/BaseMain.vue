@@ -1,12 +1,21 @@
 <template>
     <main>
+        <TheCompany />
+        <TheServices />
 
     </main>
 </template>
 
 <script>
+import TheCompany from './TheCompany.vue';
+import TheServices from './TheServices.vue';
+
 export default {
-    name: 'BaseMain'
+    name: 'BaseMain',
+    components: {
+    TheCompany,
+    TheServices,
+}
 }
 </script>
 

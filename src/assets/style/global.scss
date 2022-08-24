@@ -10,28 +10,105 @@
 @import "~@fontsource/poppins/700.css";
 @import "~@fontsource/poppins/800.css";
 
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-    color: $text-col;
 }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    color: $text-col;   
+    overflow-x: hidden;
+}
+
+header{
+    color:  $text-col
+}
+
+footer{
+    color:  $text-col
+}
+
 
 .container {
     width: 60%;
     margin: 0 auto;
 }
 
-ul {
-    list-style: none;
+section.light {
+    color: $text-dark-col;
+}
+section.dark {
+    color: $text-col;
 }
 
-ul.inline-list {
-    list-style: none;
+h1 {
+    text-transform: capitalize;
+    font-size: 74px;
+    font-weight: 900;
+    line-height: 86px;
+}
 
-    li {
-        display: inline-block;
+h2 {
+    font-weight: 800;
+    font-size: 48px;
+
+    & > span {
+        background-color: $brand15-col;
+        border-radius: 5px;
+        padding: 0 15px;
+    }
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+h4 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+h5 {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $brand-col;
+}
+
+p {
+    font-weight: 200;
+}
+
+input, select {
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 17px;
+    border: none;
+    background-color: $black10;
+    appearance: none;
+}
+
+input {
+    &:focus{
+        outline: none;
+    }
+    &:focus-visible {
+        outline: 2px solid $brand-dark-col;
+    }
+}
+
+ul {
+    list-style: none;
+    
+    &.inline-list {
+        li {
+            display: inline-block;
+        }
     }
 }
 
@@ -39,6 +116,7 @@ ul.inline-list {
     padding: 10px 30px;
     border-radius: 5px;
     text-transform: uppercase;
+    text-decoration: none;
     font-weight: 400;
 }
 
@@ -57,15 +135,15 @@ ul.inline-list {
 
     span {
         font-size: 20px;
-        font-weight: 600;
+        font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 5px;
         margin-right: 5px;
 
         &:first-child {
             padding: 10px 0 10px 30px;
-            border-top-left-radius: 25px;
-            border-bottom-left-radius: 25px;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
             color: $brand-col;
             background-color: $brand15-col;
         }
