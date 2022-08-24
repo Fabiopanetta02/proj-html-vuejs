@@ -63,10 +63,6 @@ export default {
     @import '../assets/style/variables.scss';
     @import '../assets/style/mixins.scss';
     header {
-        *:not(.btn) {
-                color: $text-col;
-                
-            }
         a{
             text-decoration: none
         }
@@ -80,7 +76,7 @@ export default {
                 display: flex;
                 justify-content: space-between;
                 font-size: 14px;
-                color: $text-light-col;
+                color: $white60;
                 li {
                     &:first-child {
                         flex-grow: 1;
@@ -89,14 +85,15 @@ export default {
                         margin-left: 30px;
                     }
                     * {
-                        color: $text-light-col;
+                        color: $white60;
                     }
                     i {
                         margin-right: 5px;
                     }
-                    a {
-                        text-decoration: none;                        
-                    }
+                    a:not(.btn) {
+                        color: $white60;
+                        text-decoration: none; 
+                    }                        
                 }
             }
         }  
@@ -113,6 +110,7 @@ export default {
                 div.container{
                 display: flex;
                 justify-content: space-between;
+                align-items: center;
                 padding-top: 20px;
                 }
 

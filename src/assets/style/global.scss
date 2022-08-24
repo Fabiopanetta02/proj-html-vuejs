@@ -2,6 +2,7 @@
 @import './mixins.scss';
 
 //font
+@import "~@fontsource/poppins/200.css";
 @import "~@fontsource/poppins/300.css";
 @import "~@fontsource/poppins/400.css";
 @import "~@fontsource/poppins/500.css";
@@ -22,6 +23,10 @@
     margin: 0 auto;
 }
 
+ul {
+    list-style: none;
+}
+
 ul.inline-list {
     list-style: none;
 
@@ -31,19 +36,38 @@ ul.inline-list {
 }
 
 .btn {
-    @include flex-center ('cross');
     padding: 10px 30px;
     border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 400;
 }
 
 .btn-solid {
     background-color: $brand-dark-col;
     color: $text-col;
-    text-transform: uppercase;
 }
 
 .btn-outline {
     color: $text-col;
     border: 1px solid $brand-dark-col;
-    text-transform: uppercase;
+}
+
+.logo {
+    text-decoration: none;   
+
+    span {
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        margin-right: 5px;
+
+        &:first-child {
+            padding: 10px 0 10px 30px;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+            color: $brand-col;
+            background-color: $brand15-col;
+        }
+    }
 }

@@ -1,10 +1,20 @@
 //colors
-$brand-dark-col: #058283;
-$brand-col: #02a6a6;
-$brand-alpha20-col: rgba(#02a6a6, 0.2);
+$brand-dark-col: #048383;
+$brand-col: #45bbbc;
+$brand15-col: rgba($brand-col, 0.15);
+
 $text-col: #fff;
-$text-light-col: #c0c3d0;
 $text-dark-col: #21333e;
+
 $bg-dark-col: #0d0d11;
-$bg-dark-col: #111117;
+$bg-col: #111117;
+
+$gray-nurse: #e3e7df;
+
+$black10: rgba(#000, 0.1);
+$white3: rgba(#fff, 0.03);
+$white60: rgba(#fff, 0.6);
+$white80: rgba(#fff, 0.8);
+
+$text-light-col: #c0c3d0;
 $bg-light-col: #19191f;

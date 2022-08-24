@@ -10,3 +10,8 @@
         align-items: center;       
     }
 }
+
+@mixin small-font {
+    font-size: 15px;
+    font-weight: 200;
+}
