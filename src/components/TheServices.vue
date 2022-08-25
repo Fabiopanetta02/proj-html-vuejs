@@ -46,10 +46,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    @import '../assets/style/global.scss';
     @import '../assets/style/variables.scss';
     @import '../assets/style/mixins.scss';
     section {
-        background-color: $bg-light-col;  
+        background-color: #121117;  
               
         
         .option-cards {

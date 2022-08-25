@@ -6,7 +6,7 @@
                 <li v-for="contact, index in contactsLinks"
                     :key="index">
                     <a :href="contact.url">
-                        <font-awesome-icon :icon="contact.icon" />
+                        <font-awesome-icon :icon="contact.icon" class="icon"/>
                         {{ contact.text }}
                     </a>
                 </li>
@@ -27,7 +27,7 @@
                             <a :href="link.url">{{ link.text.toUpperCase() }}</a>
                         </li>
                         <li>
-                            <a class="btn" href="#">Get in touch</a>
+                            <a class="btn btn-solid" href="#">Get in touch</a>
                         </li>
                     </ul>
                 </div>
@@ -35,7 +35,7 @@
                     <h2 >Lead ~ <span>Customer</span></h2>
                     <p>Successful startegies require data analysis, creativity and customer focus, taking advantage of the latest technologies to offer excellent services</p>
                     <div>
-                        <a href="#" class="btn btn-inline">Get in touch</a>
+                        <a href="#" class="btn btn-solid">Get in touch</a>
                         <a href="#" class="btn btn-outline">Read more</a>
                     </div>
                 </div>
@@ -60,6 +60,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    @import '../assets/style/global.scss';
     @import '../assets/style/variables.scss';
     @import '../assets/style/mixins.scss';
     header {
@@ -77,7 +78,6 @@ export default {
                 display: flex;
                 justify-content: space-between;
                 font-size: 14px;
-                color: $white60;
                 li {
                     &:first-child {
                         flex-grow: 1;
@@ -88,12 +88,12 @@ export default {
                     * {
                         color: $white70;
                     }
-                    i {
+                    .icon {
                         margin-right: 5px;
+                        transition: $trans-time;
                     }
-                    a:not(.btn) {
-                        color: $white60;
-                        text-decoration: none; 
+                    a:hover{
+                        color: $brand-col;
                     }                        
                 }
             }
@@ -124,8 +124,11 @@ export default {
                 ul {
                     li {
                         margin-left: 40px;
-                        a.btn{
-                            background-color: #038483;
+                        a:not(.btn){
+                            &:hover{
+                                transform: translateY(4px);
+                                color: $brand-col;
+                            }
                         }
                     }
                 }
@@ -135,7 +138,7 @@ export default {
 
                     h2{
                         font-size: 60px;
-                        margin-top: 200px;
+                        margin-top: 250px;
                     }
                     p{
                         width: 730px;
@@ -146,12 +149,6 @@ export default {
                         justify-content: center;
                         a{
                             margin: 0 10px;
-                        }
-                        a.btn-inline{
-                            background-color: #038483;
-                        }
-                        a.btn-outline{
-                            border: 1px solid #038483;
                         }
                     }
                 }

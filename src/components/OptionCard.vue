@@ -19,6 +19,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    @import '../assets/style/global.scss';
     @import '../assets/style/variables.scss';
     .option {
         width: calc((100% - 60px) / 3);
@@ -27,6 +28,14 @@ export default {
         border-radius: 10px;
         background-color: #24333d;
         color: #fff;
+        transition: $trans-time;
+        &:nth-last-child(-n+3) {
+            margin-bottom: 0;
+        }
+        &:hover {
+            transform: $move-card-up;
+            box-shadow: 0 5px 5px $black10;
+        }
         div {
             display: flex;
             justify-content: space-between;
@@ -34,6 +43,9 @@ export default {
             .icon{
                 font-size: 48px;
                 color: $brand-dark-col;
+                &:hover {
+                    color: #fff;
+                }
             }
         }
         h3, p {

@@ -1,32 +1,37 @@
 //colors
-$brand-dark-col: #058283;
+$brand-dark-col: #038483;
 $brand-dark50-col: rgba($brand-dark-col, 0.50);
 $brand-dark15-col: rgba($brand-dark-col, 0.15);
 
-$brand-col: #00a6a6;
+$brand-col: #41C457;
 $brand-light-col: #d9f2f2;
 $brand15-col: rgba($brand-col, 0.15);
 
 $text-col: #fff;
 $text-dark-col: #21333e;
 
-$bg-dark-col: #0d0d11;
 $bg-col: #111117;
 $bg-dark-col: #0d0d11;
 $bg-light-col: #eef4ed;
 
 $gray-nurse: #e3e7df;
 
+// black shades
+$black5: rgba(#000, 0.05);
 $black10: rgba(#000, 0.1);
+$black15: rgba(#000, 0.15);
 $black25: rgba(#000, 0.25);
 $black40: rgba(#000, 0.40);
 $black60: rgba(#000, 0.6);
 $black70: rgba(#000, 0.7);
+
+// white shades
 $white3: rgba(#fff, 0.03);
 $white50: rgba(#fff, 0.5);
 $white60: rgba(#fff, 0.6);
 $white70: rgba(#fff, 0.7);
 $white80: rgba(#fff, 0.8);
 
-$text-light-col: #c0c3d0;
-$bg-light-col: #19191f;
+//transition
+$trans-time: .4s ease-out;
+$move-card-up: translateY(-7.5px);

@@ -31,6 +31,11 @@ export default {
         padding: 40px;
         border-radius: 15px;
         background-color: $white3;
+        transition: $trans-time;
+        &:hover {
+            transform: $move-card-up;
+        }
+        
         h3 {
             margin-bottom: 20px;
         }
@@ -42,8 +47,12 @@ export default {
                 }
                 a {
                     font-weight: 300;
-                    color: $white60;
                     text-decoration: none;
+                    color: $white60;
+                    transition: $trans-time;
+                    &:hover {
+                        color: $brand-col;
+                    }
                 }
             }
         }

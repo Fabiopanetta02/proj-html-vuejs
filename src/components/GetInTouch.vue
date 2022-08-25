@@ -14,7 +14,7 @@
             </div>
             <div class="col-4">
                 <div class="contacts">
-                    <h4>Example inc.</h4>
+                    <h3 class="fw-bold mb-3">Example inc.</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <p>Praesent diam lacus, dapibus sed imperdiet consectetur</p>
                     <span>
@@ -57,6 +57,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    @import '../assets/style/global.scss';
     @import '../assets/style/variables.scss';
     section {
         color: #000;

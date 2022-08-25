@@ -32,6 +32,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    @import '../assets/style/global.scss';
     @import '../assets/style/variables.scss';
     section {
         background: url('../assets/img/bg-1.jpg') center;
@@ -53,6 +54,11 @@ export default {
                 }
                 input {
                     background-color: $white50;
+                    
+                    &:hover,
+                    &:focus {
+                        background-color: $black15;
+                    }
                 }
                 button.btn-inline {
                     align-self: flex-start;

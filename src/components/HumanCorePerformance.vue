@@ -30,10 +30,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    @import '../assets/style/global.scss';
     @import '../assets/style/variables.scss';
     @import '../assets/style/mixins.scss';
     section {
-        background-color: #e3e7df;  
+        background-color: $gray-nurse;  
         .option-cards {
             display: flex;
             flex-wrap: wrap;

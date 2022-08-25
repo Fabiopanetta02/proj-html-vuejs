@@ -1,9 +1,9 @@
 <template>
     <div class="news-card">
         <img :src="require(`../assets/img/news-${this.item.pic}.jpg`)" :alt="`News pic-${this.item.pic}`">
-        <div>
+        <a :href="item.url">
             <h3>{{ item.title }}</h3>
-        </div>
+        </a>   
     </div>
 </template>
 
@@ -29,12 +29,22 @@ export default {
         width: 360px;
         border-radius: 15px;
         overflow: hidden;
+        transition: $trans-time;
+
+        &:nth-last-child(-n+3) {
+            margin-bottom: 0;
+        }
         
+        &:hover {
+            box-shadow: 0 5px 10px $black40;
+        }
+    }
         img {
             width: 100%;
             height: 100%;
+            transition: $trans-time;
         }
-        div {
+        a h3{
             display: flex;
             align-items: flex-end;
             position: absolute;
@@ -47,10 +57,4 @@ export default {
             background-color: $black40;
             color: $text-col;
         }
-        &:hover {
-            img {
-               filter: blur(0); 
-            }
-        }
-    }
 </style>

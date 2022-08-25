@@ -77,22 +77,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    @import '../assets/style/global.scss';
     @import '../assets/style/variables.scss';
     @import '../assets/style/mixins.scss';
     footer {
-        
         a {
             text-decoration: none;
         }
-        
         .footer-top {
             @include flex-center ('both');
             width: 100%;
-            height: 620px;
+            padding: 130px 0;
             background-color: $bg-col;
             .container {
-                display: flex;
-                justify-content: space-between;
+                @include flex-wrap-between;
                 & > div {
                     width: calc((100% - 90px) / 4);
                 }
@@ -137,7 +135,6 @@ export default {
         
         .footer-bottom {
             @include flex-center ('cross');        
-            @include small-font;
             height: 90px;
             background-color: $bg-dark-col;
             .container {
@@ -146,6 +143,10 @@ export default {
                 a{
                     font-size: 17px;
                     color: $brand-col;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
                 }
             }
         }

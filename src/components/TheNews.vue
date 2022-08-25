@@ -42,6 +42,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../assets/style/global.scss';
     span{
         color: #038483;
     }
